@@ -1,5 +1,10 @@
 <?php
 include 'header.php';
+$username = 'admin';
+if($username != 'admin') {
+    echo 'You dont have permission to use this page';
+    exit();
+}
 ?>
   <!-- User -->
   <div class="container login-container signin-and-signup-form">
@@ -140,46 +145,48 @@ include 'header.php';
             <p class="lead mb-0"><?php echo $_GET['description']; ?></p>
             <br>
             <div class="container">
-            <div class="row">
+            <div class="row text-left">
                 <div class="col-sm-6">
                     <!-- Pick color variant -->
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="colorPick" id="exampleRadios1" value="option1" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             Black
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="colorPick" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             Blue
                         </label>
                     </div>
+                    <br><a class="btn btn-info" href="#">Add</a>
                 </div>
                 <div class="col-sm-6">
                     <!-- Pick size variant -->
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
+                        <input class="form-check-input" type="radio" name="sizePick" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios2">
                             L
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="sizePick" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             XL
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="sizePick" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             XXL
                         </label>
                     </div>
+                    <br><a class="btn btn-info" href="#">Add</a>
                 </div>
             </div>
         </div>
-            <br><a class="btn btn-primary" href="item.php?name=Fully Responsive">Add to cart</a>
+            <br><a class="btn btn-success" href="item-save.php?name=Fully Responsive" style="width:100%;">Save</a>
           </div>
         </div>
   </section>

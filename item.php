@@ -144,13 +144,13 @@ include 'header.php';
                 <div class="col-sm-6">
                     <!-- Pick color variant -->
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="colorPick" id="exampleRadios1" value="option1" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             Black
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="colorPick" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             Blue
                         </label>
@@ -159,19 +159,19 @@ include 'header.php';
                 <div class="col-sm-6">
                     <!-- Pick size variant -->
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="sizePick" id="exampleRadios1" value="option1" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             L
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="sizePick" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             XL
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="sizePick" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             XXL
                         </label>

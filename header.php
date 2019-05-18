@@ -43,3 +43,15 @@
       </div>
     </div>
   </nav>
+<?php
+require 'php/classes.php';
+const DB_HOST = 'localhost';
+const DB_NAME = 'store';
+const DB_USER = 'root';
+const DB_PASS = '';
+$db = new DatabaseClass('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASS);
+// Create Item object
+$items = new ItemsClass($db);
+// $user->register(array('name'));
+$orders = new OrdersClass($db);
+?>
