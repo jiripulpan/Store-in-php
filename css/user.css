@@ -122,3 +122,8 @@
 .center-cols {
     justify-content:center;
 }
+.icon-box {
+    background-image: url("../img/icon-box.png") no-repeat;
+    width: 100px;
+    height: 100px;
+}

@@ -9,7 +9,7 @@ if($username != 'admin') {
 
 include 'admin-panel-menu.php';
 ?>
-  
+<div class="icon-box"></div>  
     <!-- Individual orders -->
     <section class="features-icons bg-light text-center">
       <div class="container">
@@ -23,7 +23,7 @@ include 'admin-panel-menu.php';
             echo '<div class="col-lg-4">
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                       <div class="features-icons-icon d-flex">
-                        <i class="icon-drawer m-auto text-primary"></i>
+                        <div class="icon-box m-auto text-primary"></div>
                       </div>
                       <h3>title</h3>
                       <p class="lead mb-0">description</p>
